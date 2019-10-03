@@ -59,4 +59,3 @@ int divide()
     }
     cout<<"Quotient is "<<quo;
 }
-
