@@ -140,3 +140,41 @@ int power()
     cin>>x>>y;
     cout<<pow(x,y);
 }
+
+int main()
+{   
+    int opt;
+    cout<<"Calculator-";
+    cout<<"\n1. Add";
+    cout<<"\n2. Subtract";
+    cout<<"\n3. Multiply";
+    cout<<"\n4. Divide";
+    cout<<"\n5. Logarithm"; 
+    cout<<"\n6. Trigonometric fn";
+    cout<<"\n7. Power";
+    cout<<"\nEnter option-";
+    cin>>opt;
+    
+    switch(opt)
+    {
+        case 1:{add();
+                break;}
+        case 2:{subtract();
+                break;}
+        case 3:{multiply();
+                break;}
+        case 4:{divide();
+                break;}
+        case 5:{logarithm();
+                break;}
+        case 6:{trig();
+                break; } 
+        case 7:{power();
+                break;}
+                
+        default:{cout<<"Invalid option";
+                 break;}
+    }
+
+return 0;
+}
